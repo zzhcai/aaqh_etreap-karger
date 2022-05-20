@@ -38,3 +38,6 @@
 !.vscode/*.code-snippets
 .history/
 *.vsix
+
+# executable
+experiment
