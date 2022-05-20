@@ -1,0 +1,30 @@
+g++ -c main.cpp -Wall -Wpedantic -Wno-reorder -std=c++11 -g
+g++ -o experiment main.o generator.o treap.o dynamicarray.o -Wall -Wpedantic -Wno-reorder -std=c++11 -g
+
+==================================================================
+
+					   Treap	   Array
+
+Experiment 1 with L_ins = 100000:	   0.055	   0.003
+Experiment 1 with L_ins = 200000:	   0.160	   0.006
+Experiment 1 with L_ins = 500000:	   0.594	   0.014
+Experiment 1 with L_ins = 800000:	   1.231	   0.024
+Experiment 1 with L_ins = 1000000:	   1.940	   0.031
+
+Experiment 2 with %_del = 0.1:		   1.838	   0.866
+Experiment 2 with %_del = 0.5:		   1.858	   4.593
+Experiment 2 with %_del = 1:		   1.700	   9.483
+Experiment 2 with %_del = 5:		   1.792	  71.727
+Experiment 2 with %_del = 10:		   1.583	 168.192
+
+Experiment 3 with %_sch = 0.1:		   1.661	   1.773
+Experiment 3 with %_sch = 0.5:		   1.751	   8.396
+Experiment 3 with %_sch = 1:		   1.645	  16.368
+Experiment 3 with %_sch = 5:		   1.679	  79.224
+Experiment 3 with %_sch = 10:		   1.576	 150.692
+
+Experiment 4 with L = 100000:		   0.051	   0.586
+Experiment 4 with L = 200000:		   0.139	   3.071
+Experiment 4 with L = 500000:		   0.604	  36.072
+Experiment 4 with L = 800000:		   1.297	 113.111
+Experiment 4 with L = 1000000:		   1.816	 182.436
