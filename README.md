@@ -9,4 +9,5 @@ nohup ./run.sh > experiment.out &
 
 # Marks
 
-- 10/10 + ? (?%)
+- 10/10 + 18.5/20 (95%)
+- Not good enough to solve the problem in question c. - Zhuo Zhang
